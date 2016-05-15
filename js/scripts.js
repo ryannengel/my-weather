@@ -10,9 +10,10 @@ $(function() {
       console.log(weather);
       
       $('.city').text(weather.city);
-      $('.temp').text(weather.temp);
-      $('.cond-code').text(weather.code);
-      $('.icon img').attr('src', weather.image);
+      $('.temp').text(weather.temp + '°F');
+//      $('.icon img').attr('src', weather.image);
+      $('.high').text('High: ' + weather.high + '°F');
+      $('.low').text('Low: ' + weather.low + '°F');
       
     
     },
